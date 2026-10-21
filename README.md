@@ -1,11 +1,11 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro.svg">
-  <img src="./assets/terminal-intro.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro-v2.svg">
+  <img src="./assets/terminal-intro-v2.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-526eeb1d2b9c.svg">
-  <img src="./assets/languages-526eeb1d2b9c.svg" alt="Languages used across public and private repositories" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-1d4cf515357c.svg">
+  <img src="./assets/languages-1d4cf515357c.svg" alt="Languages used across public and private repositories" width="100%">
 </picture>
 
 ### I've worked in these
