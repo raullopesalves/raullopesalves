@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="376" viewBox="0 0 790 376" role="img" aria-labelledby="title desc">
+  <title id="title">i make stuff</title>
+  <desc id="desc">some of it ends up here. An ASCII person typing at a computer displaying stuff, inside a decorative terminal window.</desc>
+  <style>
+    .window{fill:#f6f8fa;stroke:#d0d7de}.bar{fill:#eaeef2}.line{stroke:#d0d7de}.text{fill:#24292f}.muted{fill:#59636e}.prompt{fill:#1a7f37}.cursor{fill:#1a7f37;animation:blink 1.2s step-end infinite}
+    text{font:13px 'Courier New',monospace;white-space:pre}
+    @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+    @media(prefers-color-scheme:dark){.window{fill:#0d1117;stroke:#30363d}.bar{fill:#161b22}.line{stroke:#30363d}.text{fill:#e6edf3}.muted{fill:#9198a1}.prompt{fill:#7ee787}.cursor{fill:#7ee787}}
+    @media(prefers-reduced-motion:reduce){.cursor{animation:none}}
+  </style>
+  <rect class="window" x="1" y="1" width="788" height="374" rx="8"/>
+  <path class="bar" d="M9 2H781Q788 2 788 9V38H2V9Q2 2 9 2Z"/>
+  <path class="line" d="M2 38H788"/>
+  <text class="muted" x="22" y="24" style="font-size:11px">Terminal</text>
+  <text class="muted" x="395" y="24" text-anchor="middle" style="font-size:11px">raul@linux: ~</text>
+  <g class="line" fill="none" stroke-width="1.3" stroke-linecap="round">
+    <path d="M687 23h10"/>
+    <rect x="725" y="16" width="9" height="9" rx="1"/>
+    <path d="m764 16 8 8m0-8-8 8"/>
+  </g>
+  <text x="22" y="69"><tspan class="prompt">raul@linux:~$</tspan><tspan class="text"> cat intro.txt</tspan></text>
+  <text class="text" x="22" y="91">i make stuff</text>
+  <text class="muted" x="22" y="111">some of it ends up here</text>
+  <g class="text">
+    <text x="22" y="151">        .----.      __________________</text>
+    <text x="22" y="169">       / .--. \    |                  |</text>
+    <text x="22" y="187">       | |  | |    |      stuff       |</text>
+    <text x="22" y="205">       \ '--' /    |                  |</text>
+    <text x="22" y="223">        '----'     |__________________|</text>
+    <text x="22" y="241">        /|  |\             |  |</text>
+    <text x="22" y="259">       / |  | \      ______|__|______</text>
+    <text x="22" y="277">      /  |  |  \____/  [] [] [] []  /|</text>
+    <text x="22" y="295">     /___|__|_______/______________/ |</text>
+  </g>
+  <text class="prompt" x="22" y="345">raul@linux:~$</text>
+  <rect class="cursor" x="131" y="333" width="8" height="15" rx="1"/>
+</svg>
