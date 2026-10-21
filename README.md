@@ -2,12 +2,6 @@
 
 some of it ends up here
 
-### numbers
-
-![Public repositories, stars, followers, and join year](./assets/stats.svg)
-
-![Languages used in public repositories](./assets/languages.svg)
-
 ### stuff
 
 | thing | what it does |
@@ -15,8 +9,23 @@ some of it ends up here
 | [geodata dashboard](https://github.com/raullopesalves/geodata-dashboard-ui) | bird flu case data on maps and charts. |
 | [expense tracker](https://github.com/raullopesalves/expense_tracker) | tracks expenses. |
 
-### tools
-
-TypeScript · React · Leaflet · Chart.js
-
 [all repositories](https://github.com/raullopesalves?tab=repositories)
+
+### languages
+
+<p>
+  <img src="./assets/icons/typescript.svg" alt="TypeScript" width="28" height="28">&nbsp;
+  <img src="./assets/icons/javascript.svg" alt="JavaScript" width="28" height="28">&nbsp;
+  <img src="./assets/icons/html5.svg" alt="HTML" width="28" height="28">&nbsp;
+  <img src="./assets/icons/css3.svg" alt="CSS" width="28" height="28">&nbsp;
+  <img src="./assets/icons/java.svg" alt="Java" width="28" height="28">
+</p>
+
+![Languages used in public repositories](./assets/languages.svg)
+
+### contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg">
+  <img src="./profile-3d-contrib/profile-green-animate.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+</picture>
