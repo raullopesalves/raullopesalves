@@ -31,3 +31,10 @@
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-e0562cacb4d7.svg">
   <img src="./assets/contributions-light-79b762e4ffb8.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
+
+<!-- pixel-experiment -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-2a8e6270758d.svg">
+  <img src="./assets/experiment-2a8e6270758d.svg" alt="Five tiny pixel visitors. A different set each day." width="100%">
+</picture>
+<!-- /pixel-experiment -->
