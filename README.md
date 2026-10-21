@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro-linux.svg">
-  <img src="./assets/terminal-intro-linux.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro-linux-v2.svg">
+  <img src="./assets/terminal-intro-linux-v2.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 </picture>
 
 <picture>
