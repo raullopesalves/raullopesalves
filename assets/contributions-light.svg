@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 240 1280 440" role="img" aria-label="3D public contribution calendar"><style>* { font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 240 1280 440" role="img" aria-label="3D contribution calendar"><style>* { font-family: "Ubuntu", "Helvetica", "Arial", sans-serif; }
 .fill-fg { fill: #00000f; }
 .stroke-fg { stroke: #00000f; }
 .fill-bg { fill: #ffffff; }
