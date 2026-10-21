@@ -26,6 +26,6 @@ some of it ends up here
 ### contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=97ee20a0b3ac">
-  <img src="./assets/contributions-light.svg?v=c5789e5d2f1b" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-97ee20a0b3ac.svg">
+  <img src="./assets/contributions-light-c5789e5d2f1b.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>

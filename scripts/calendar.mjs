@@ -23,8 +23,9 @@ for (const [theme, source, background] of [
   const style = svg.match(/<style>[\s\S]*?<\/style>/)?.[0];
   if (!style) throw new Error('Calendar styles missing');
   const output = `<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 240 1280 440" role="img" aria-label="3D contribution calendar">${style}<rect x="0" y="240" width="1280" height="440" fill="${background}"/><g transform="rotate(-20 640 425)">${svg.slice(start, end)}</g></svg>`;
-  await writeFile(`assets/contributions-${theme}.svg`, output);
+  
   const version = createHash('sha256').update(output).digest('hex').slice(0, 12);
-  readme = readme.replace(new RegExp(`\\./assets/contributions-${theme}\\.svg(?:\\?v=[a-f0-9]+)?`, 'g'), `./assets/contributions-${theme}.svg?v=${version}`);
+  await writeFile(`assets/contributions-${theme}-${version}.svg`, output);
+  readme = readme.replace(new RegExp(`\\./assets/contributions-${theme}(?:-[a-f0-9]+)?\\.svg(?:\\?v=[a-f0-9]+)?`, 'g'), `./assets/contributions-${theme}-${version}.svg`);
 }
 await writeFile('README.md', readme);
