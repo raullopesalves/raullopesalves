@@ -1,0 +1,36 @@
+name: refresh contribution snake
+on:
+  schedule:
+    - cron: '27 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake-light.svg?color_snake=%233178c6
+            assets/snake-dark.svg?palette=github-dark&color_snake=%2358a6ff
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: node scripts/snake.mjs
+      - name: save animation
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md assets/snake-*.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh contribution snake'
+            git push
+          fi
