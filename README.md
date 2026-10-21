@@ -13,13 +13,13 @@ some of it ends up here
 
 ### languages
 
-![Languages used in public + private repositories](./assets/languages-d9254be0dcac.svg)
+![Languages used in public + private repositories](./assets/languages-0d944a1b8a9f.svg)
 
 ### contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-44e311591613.svg">
-  <img src="./assets/contributions-light-2260f6ad544f.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-f62ace5be8c3.svg">
+  <img src="./assets/contributions-light-2f8b02884364.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
 
 ### snake
