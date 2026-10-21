@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
 concurrency:
   group: profile-stats
   cancel-in-progress: false
@@ -35,6 +36,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: save cards
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -42,4 +45,5 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh public profile stats'
             git push
+            gh api --method POST "repos/${{ github.repository }}/pages/builds" --silent
           fi
