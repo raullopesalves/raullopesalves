@@ -43,30 +43,38 @@ const stats = metrics.map(([value, label], i) => {
   return `<rect class="box" x="${x}" y="1" width="188" height="106" rx="7"/><text class="text" x="${x + 18}" y="49" font-size="29" font-weight="600">${value}</text><text class="muted" x="${x + 18}" y="79" font-size="12">${label}</text>`;
 }).join('');
 const iconNames = { TypeScript: 'typescript', JavaScript: 'javascript', HTML: 'html5', CSS: 'css3', Java: 'java' };
-const cards = [];
-for (const [i, [language, bytes]] of shown.entries()) {
-  const x = 2 + i % 2 * 232;
-  const y = 2 + Math.floor(i / 2) * 78;
-  let icon = '';
+const badges = [];
+let badgeX = 20;
+let badgeY = 49;
+for (const [i, [language]] of shown.entries()) {
+  const width = Math.max(72, language.length * 7 + 49);
+  if (badgeX + width > 314) { badgeX = 20; badgeY += 40; }
+  let icon = `<circle cx="${badgeX + 17}" cy="${badgeY + 15}" r="4" fill="${colors[i]}"/>`;
   if (iconNames[language]) {
     const source = await readFile(`assets/icons/${iconNames[language]}.svg`, 'utf8');
     const viewBox = source.match(/viewBox="([^"]+)"/)?.[1] || '0 0 128 128';
     const inner = source.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
-    icon = `<svg x="${x + 18}" y="${y + 19}" width="30" height="30" viewBox="${viewBox}">${inner}</svg>`;
+    icon = `<svg x="${badgeX + 10}" y="${badgeY + 7}" width="16" height="16" viewBox="${viewBox}">${inner}</svg>`;
   }
-  cards.push(`<rect class="box" x="${x}" y="${y}" width="218" height="66" rx="9" style="stroke:${colors[i]};stroke-opacity:0.8"/>${icon}<text class="text" x="${x + 62}" y="${y + 28}" font-size="14" font-weight="600">${escape(language)}</text><circle cx="${x + 66}" cy="${y + 46}" r="3" fill="${colors[i]}"/><text class="muted" x="${x + 77}" y="${y + 50}" font-size="12">${(bytes / sum * 100).toFixed(1)}%</text>`);
+  badges.push(`<rect x="${badgeX}" y="${badgeY}" width="${width}" height="30" rx="15" fill="${colors[i]}" fill-opacity="0.09" stroke="${colors[i]}" stroke-opacity="0.5"/>${icon}<text class="text" x="${badgeX + 34}" y="${badgeY + 20}" font-size="12">${escape(language)}</text>`);
+  badgeX += width + 9;
 }
-const radius = 79;
+const height = Math.max(208, badgeY + 60, 52 + shown.length * 26);
+const centerY = 92;
+const radius = 53;
 const circumference = 2 * Math.PI * radius;
 let offset = 0;
 const arcs = shown.map(([, bytes], i) => {
   const length = sum ? bytes / sum * circumference : 0;
-  const arc = `<circle cx="624" cy="112" r="${radius}" fill="none" stroke="${colors[i]}" stroke-width="21" stroke-dasharray="${length} ${circumference - length}" stroke-dashoffset="${-offset}" transform="rotate(-90 624 112)"/>`;
+  const arc = `<circle cx="431" cy="${centerY}" r="${radius}" fill="none" stroke="${colors[i]}" stroke-width="19" stroke-dasharray="${length} ${circumference - length}" stroke-dashoffset="${-offset}" transform="rotate(-90 431 ${centerY})"/>`;
   offset += length;
   return arc;
 }).join('');
-const height = Math.max(248, Math.ceil(shown.length / 2) * 78 + 14);
-const languageSvg = `${cards.join('')}${arcs}<text class="text" x="624" y="109" text-anchor="middle" font-size="26" font-weight="600">${ranked.length}</text><text class="muted" x="624" y="132" text-anchor="middle" font-size="12">languages</text><text class="muted" x="624" y="228" text-anchor="middle" font-size="11">share of public code bytes</text>`;
+const legend = shown.map(([language, bytes], i) => {
+  const y = 38 + i * 26;
+  return `<circle cx="523" cy="${y - 4}" r="4" fill="${colors[i]}"/><text class="text" x="537" y="${y}" font-size="12">${escape(language)}</text><text class="muted" x="767" y="${y}" text-anchor="end" font-size="12">${(bytes / sum * 100).toFixed(1)}%</text>`;
+}).join('');
+const languageSvg = `<rect class="box" x="1" y="1" width="329" height="${height - 2}" rx="8"/><rect class="box" x="348" y="1" width="440" height="${height - 2}" rx="8"/><text class="muted" x="20" y="29" font-size="11" font-weight="600" letter-spacing="0.7">LANGUAGES</text>${badges.join('')}${arcs}<text class="muted" x="431" y="97" text-anchor="middle" font-size="12">${ranked.length} langs</text>${legend}<text class="muted" x="368" y="${height - 20}" font-size="11">public repos · share of code bytes</text>`;
 await mkdir('assets', { recursive: true });
 await writeFile('assets/stats.svg', shell(790, 109, stats, metrics.map(row => row.join(' ')).join(', ')));
 const graphic = shell(790, height, languageSvg, shown.map(([language, bytes]) => `${language}: ${(bytes / sum * 100).toFixed(1)}%`).join(', ') + '. Public, non-fork repositories; code bytes, not proficiency.');

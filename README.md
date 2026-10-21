@@ -13,7 +13,7 @@ some of it ends up here
 
 ### languages
 
-![Languages used in public repositories](./assets/languages-5d7d0d1e5d28.svg)
+![Languages used in public repositories](./assets/languages-d0e12f2bc702.svg)
 
 ### contributions
 
