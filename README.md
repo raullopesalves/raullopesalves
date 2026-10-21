@@ -28,3 +28,5 @@ some of it ends up here
   <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark-a1b3cd6cc6cf.svg">
   <img src="./assets/snake-light-86006ecf2f7f.svg" alt="Animated snake eating the contribution squares" width="100%">
 </picture>
+
+[![play i break stuff](./assets/break-stuff.svg)](https://raullopesalves.github.io/raullopesalves/)

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="A small Breakout game made from Raúl Alves's GitHub contributions. For no particular reason.">
+  <title>i break stuff</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <a class="back" href="https://github.com/raullopesalves">raúl / github</a>
+    <button id="theme" class="quiet" aria-label="Switch color theme">light / dark</button>
+  </header>
+  <section class="intro">
+    <h1>i break stuff</h1>
+    <p>some of it used to be contributions.</p>
+  </section>
+  <div class="scoreboard" aria-label="Game statistics">
+    <span>score <strong id="score">0</strong></span>
+    <span>best <strong id="best">0</strong></span>
+    <span>lives <strong id="lives">3</strong></span>
+    <span class="remaining">days left <strong id="remaining">—</strong></span>
+  </div>
+  <div class="board">
+    <canvas id="game" width="960" height="560" tabindex="0" aria-label="Breakout game. Move with arrow keys or A and D. Space to serve. P to pause." aria-describedby="help">Use a browser with canvas support to play.</canvas>
+    <div id="overlay" class="overlay">
+      <div>
+        <h2 id="overlay-title">break the green bits.</h2>
+        <p id="overlay-copy">a year of contributions. one small ball.</p>
+        <button id="play" disabled>loading contributions…</button>
+      </div>
+    </div>
+  </div>
+  <div class="toolbar">
+    <p id="status" role="status" aria-live="polite">loading the bricks.</p>
+    <div><button id="pause" class="quiet" disabled>pause</button><button id="restart" class="quiet" disabled>restart</button></div>
+  </div>
+  <p id="help" class="help"><kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> to move · <kbd>space</kbd> to serve · <kbd>P</kbd> to pause<br>mouse or touch: drag the paddle. tap to serve.</p>
+  <footer><span id="source">bricks from raullopesalves’s contribution graph.</span><a href="https://github.com/raullopesalves/raullopesalves/tree/main/docs">source</a></footer>
+</main>
+<script type="module" src="game.mjs"></script>
+</body>
+</html>
