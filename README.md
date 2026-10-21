@@ -17,16 +17,12 @@
 
 ### I studied this
 
-<table>
-<tr><td>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v4.svg">
-  <img src="./assets/education-v4.svg" alt="MSc and BSc in Computer Science at FCUL, University of Lisbon" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v5.svg">
+  <img src="./assets/education-v5.svg" alt="FCUL, University of Lisbon. MSc and BSc in Computer Science (Informatics Engineering). Where I published this, which helped in this." width="100%">
 </picture>
-<hr>
-<p>&nbsp; Where I published <a href="https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276" title="Master thesis"><strong>this</strong></a>, which helped in <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full" title="Frontiers in Medicine research article"><strong>this</strong></a>.</p>
-</td></tr>
-</table>
+
+<sub><a href="https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276">Master thesis</a> &nbsp;·&nbsp; <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full">Research paper</a></sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-e0562cacb4d7.svg">
