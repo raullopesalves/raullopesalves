@@ -34,7 +34,7 @@
 
 <!-- pixel-experiment -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-1212b4107be8.svg">
-  <img src="./assets/experiment-1212b4107be8.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-2044307c7ce9.svg">
+  <img src="./assets/experiment-2044307c7ce9.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
 </picture>
 <!-- /pixel-experiment -->

@@ -8,46 +8,46 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) throw new Error('Expected YYYY-MM-DD');
 const epochDay = Date.parse(day + 'T00:00:00Z') / 86400000;
 if (!Number.isInteger(epochDay)) throw new Error('Invalid date');
 const messages = [
-  'i make stuff',
-  'the cake is still a lie',
-  'there is no secret level',
-  'you have lost the game',
-  'stay a while and listen',
-  'the answer is forty two',
-  'do a barrel roll',
-  'all your base are belong to us',
-  'it is dangerous to go alone',
-  'the moon is a harsh mistress',
-  'there is another castle',
-  'hello world',
-  'nothing to see here',
-  'we are all made of star stuff',
-  'the spice must flow',
-  'so long and thanks for all the fish',
-  'the truth is out there',
-  'never dig straight down',
-  'a wild bug appeared',
-  'you found the hidden message',
-  'this is not a pipe',
-  'the owls are not what they seem',
-  'one more turn',
-  'may the source be with you',
-  'a strange game',
-  'follow the white rabbit',
-  'the factory must grow',
-  'press any key',
-  'beware of the leopard',
-  'mostly harmless',
-  'end of line',
+  'curious huh?',
+  'you really translated this?',
+  'was it worth it?',
+  'all that effort for this',
+  'yes this is the whole message',
+  'you could have gone outside',
+  'there is no prize',
+  'look at you reading symbols',
+  'congratulations i guess',
+  'this looked smarter untranslated',
+  'great use of your time',
+  'the secret is there is no secret',
+  'you expected lore?',
+  'please pretend this was profound',
+  'another day another pointless message',
+  'imagine putting this on a resume',
+  'you checked again?',
+  'this counts as content apparently',
+  'i had nothing better to write',
+  'you had nothing better to do?',
+  'the font did most of the work',
+  'deeply unnecessary well done',
+  'you can stop translating now',
+  'no hidden job offer sorry',
+  'this is the easter egg budget',
+  'some mysteries should stay mysteries',
+  'not everything needs decoding',
+  'surely there was an easier hobby',
+  'the translation was the entire activity',
+  'same nonsense different alphabet',
+  'see you tomorrow apparently',
 ];
 const message = messages[((epochDay % messages.length) + messages.length) % messages.length];
 const { glyphs } = JSON.parse(await readFile('assets/sga-glyphs.json', 'utf8'));
 const tracking = 75;
-const width = [...message].reduce((sum, letter) => sum + glyphs[letter].advance + tracking, -tracking);
+const width = [...message].reduce((sum, letter) => sum + (glyphs[letter]?.advance || 400) + tracking, -tracking);
 const scale = Math.min(.065, 690 / width);
 let cursor = 0;
 const paths = [...message].map(letter => {
-  const glyph = glyphs[letter];
+  const glyph = glyphs[letter] || { path: "M100 700h300v-100h-200v-100h-100v200ZM100 300h100v-100h-100Z", advance: 400 };
   const path = glyph.path ? '<path transform="translate(' + cursor + ' 0)" d="' + glyph.path + '"/>' : '';
   cursor += glyph.advance + tracking;
   return path;
