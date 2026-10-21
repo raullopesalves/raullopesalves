@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="64" viewBox="0 0 790 64" role="img" aria-label="Industry experience: telecom, banking, healthcare, public sector, consumer apps"><style>.badge{fill:#f6f8fa;stroke:#d0d7de}.icon{stroke:#0969da}.label{fill:#24292f;font:12px system-ui,sans-serif}@media(prefers-color-scheme:dark){.badge{fill:#101820;stroke:#303d49}.icon{stroke:#79b8ff}.label{fill:#e6edf3}}</style><rect class="badge" x="1" y="9" width="126" height="44" rx="8"/><svg x="14" y="21" width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" />
+  <path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" />
+  <circle cx="12" cy="9" r="2" />
+  <path d="M16.2 4.8c2 2 2.26 5.11.8 7.47" />
+  <path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1" />
+  <path d="M9.5 18h5" />
+  <path d="m8 22 4-11 4 11" />
+</svg><text class="label" x="44" y="35">telecom</text><rect class="badge" x="140" y="9" width="126" height="44" rx="8"/><svg x="153" y="21" width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <line x1="3" x2="21" y1="22" y2="22" />
+  <line x1="6" x2="6" y1="18" y2="11" />
+  <line x1="10" x2="10" y1="18" y2="11" />
+  <line x1="14" x2="14" y1="18" y2="11" />
+  <line x1="18" x2="18" y1="18" y2="11" />
+  <polygon points="12 2 20 7 4 7" />
+</svg><text class="label" x="183" y="35">banking</text><rect class="badge" x="279" y="9" width="146" height="44" rx="8"/><svg x="292" y="21" width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+  <path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" />
+</svg><text class="label" x="322" y="35">healthcare</text><rect class="badge" x="438" y="9" width="164" height="44" rx="8"/><svg x="451" y="21" width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+  <path d="M10 6h4" />
+  <path d="M10 10h4" />
+  <path d="M10 14h4" />
+  <path d="M10 18h4" />
+</svg><text class="label" x="481" y="35">public sector</text><rect class="badge" x="615" y="9" width="172" height="44" rx="8"/><svg x="628" y="21" width="20" height="20" viewBox="0 0 24 24" fill="none" class="icon" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+  <circle cx="12" cy="13" r="3" />
+</svg><text class="label" x="658" y="35">consumer apps</text></svg>

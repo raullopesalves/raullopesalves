@@ -3,6 +3,11 @@
   <img src="./assets/terminal-intro.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/industries.svg">
+  <img src="./assets/industries.svg" alt="Industry experience: telecom, banking, healthcare, public sector, consumer apps" width="100%">
+</picture>
+
 ![Languages used in public + private repositories](./assets/languages-526eeb1d2b9c.svg)
 
 <picture>
