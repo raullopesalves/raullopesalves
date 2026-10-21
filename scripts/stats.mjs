@@ -91,5 +91,5 @@ const graphic = shell(790, height, languageSvg, shown.map(([language, bytes]) =>
 const version = createHash('sha256').update(graphic).digest('hex').slice(0, 12);
 await writeFile(`assets/languages-${version}.svg`, graphic);
 const readme = await readFile('README.md', 'utf8');
-await writeFile('README.md', readme.replace(/\.\/assets\/languages(?:-[a-f0-9]+)?\.svg/g, `./assets/languages-${version}.svg`).replace('Languages used in public repositories', `Languages used in ${scopeLabel}`));
+await writeFile('README.md', readme.replace(/\.\/assets\/languages(?:-[a-f0-9]+)?(?:-square)?\.svg/g, `./assets/languages-${version}.svg`).replace('Languages used in public repositories', `Languages used in ${scopeLabel}`));
 console.log(`Generated aggregate language cards (${ranked.length} languages).`);
