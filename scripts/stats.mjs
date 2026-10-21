@@ -27,7 +27,8 @@ const shown = ranked.slice(0, 5);
 if (ranked.length > 5) shown.push(['Other', ranked.slice(5).reduce((sum, row) => sum + row[1], 0)]);
 const sum = ranked.reduce((sum, row) => sum + row[1], 0);
 const escape = text => String(text).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[character]);
-const colors = ['#8b8bdf', '#58a6b8', '#caa65d', '#7fa88a', '#b78caa', '#89929b'];
+const languageColors = { TypeScript: '#3178c6', JavaScript: '#f7df1e', CSS: '#a78bfa', HTML: '#e34f26', Java: '#4db6ac', Other: '#89929b' };
+const colors = shown.map(([language]) => languageColors[language] || '#89929b');
 function shell(width, height, body, label) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(label)}"><style>.bg{fill:#f6f8fa}.box{fill:#fff;stroke:#d0d7de}.text{fill:#1f2328}.muted{fill:#59636e}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}.box{fill:#0d1117;stroke:#30363d}.text{fill:#e6edf3}.muted{fill:#9198a1}}text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}</style><rect class="bg" width="100%" height="100%" rx="8"/>${body}</svg>\n`;
 }
@@ -53,7 +54,7 @@ for (const [i, [language, bytes]] of shown.entries()) {
     const inner = source.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
     icon = `<svg x="${x + 18}" y="${y + 19}" width="30" height="30" viewBox="${viewBox}">${inner}</svg>`;
   }
-  cards.push(`<rect class="box" x="${x}" y="${y}" width="218" height="66" rx="9"/>${icon}<text class="text" x="${x + 62}" y="${y + 28}" font-size="14" font-weight="600">${escape(language)}</text><circle cx="${x + 66}" cy="${y + 46}" r="3" fill="${colors[i]}"/><text class="muted" x="${x + 77}" y="${y + 50}" font-size="12">${(bytes / sum * 100).toFixed(1)}%</text>`);
+  cards.push(`<rect class="box" x="${x}" y="${y}" width="218" height="66" rx="9" style="stroke:${colors[i]};stroke-opacity:0.8"/>${icon}<text class="text" x="${x + 62}" y="${y + 28}" font-size="14" font-weight="600">${escape(language)}</text><circle cx="${x + 66}" cy="${y + 46}" r="3" fill="${colors[i]}"/><text class="muted" x="${x + 77}" y="${y + 50}" font-size="12">${(bytes / sum * 100).toFixed(1)}%</text>`);
 }
 const radius = 79;
 const circumference = 2 * Math.PI * radius;
