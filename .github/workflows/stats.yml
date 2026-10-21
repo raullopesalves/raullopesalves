@@ -16,9 +16,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node scripts/stats.mjs
+      - name: refresh aggregate language chart
+        run: |
+          if [ -n "$GITHUB_TOKEN" ]; then
+            node scripts/stats.mjs
+          else
+            echo 'Keeping the existing language chart until private access is configured.'
+          fi
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ secrets.LANGUAGE_STATS_TOKEN }}
+          INCLUDE_PRIVATE: 'true'
       - uses: yoshi389111/github-profile-3d-contrib@e235d118909be71eb7edb05482a3de4e76156df3
         env:
           GITHUB_TOKEN: ${{ github.token }}
