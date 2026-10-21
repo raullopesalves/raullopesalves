@@ -1,8 +1,8 @@
-# i make stuff
-
+```text
+raul@github:~$ whoami
+i make stuff
 some of it ends up here
 
-```text
         .----.      __________________
        / .--. \    |                  |
        | |  | |    |      stuff       |
@@ -12,6 +12,8 @@ some of it ends up here
        / |  | \      ______|__|______
       /  |  |  \____/  [] [] [] []  /|
      /___|__|_______/______________/ |
+
+raul@github:~$ _
 ```
 
 ### stuff
