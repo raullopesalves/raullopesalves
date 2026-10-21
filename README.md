@@ -20,11 +20,10 @@
 <table>
 <tr><td>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v6.svg">
-  <img src="./assets/education-v6.svg" alt="MSc and BSc in Computer Science (Informatics Engineering) at FCUL, University of Lisbon" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v7.svg">
+  <img src="./assets/education-v7.svg" alt="MSc and BSc in Computer Science (Informatics Engineering) at FCUL, University of Lisbon" width="100%">
 </picture>
-<br>
-&nbsp; Where I published <a href="https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276" title="Master thesis"><strong>this</strong></a>, which helped in <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full" title="Research paper"><strong>this</strong></a>.
+<p>&nbsp; Where I published this <a href="https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276"><strong>masters thesis</strong></a>, which helped in this <a href="https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full"><strong>research paper</strong></a>. &nbsp;</p>
 </td></tr>
 </table>
 
