@@ -1,20 +1,4 @@
-```text
-raul@github:~$ whoami
-i make stuff
-some of it ends up here
-
-        .----.      __________________
-       / .--. \    |                  |
-       | |  | |    |      stuff       |
-       \ '--' /    |                  |
-        '----'     |__________________|
-        /|  |\             |  |
-       / |  | \      ______|__|______
-      /  |  |  \____/  [] [] [] []  /|
-     /___|__|_______/______________/ |
-
-raul@github:~$ _
-```
+<img src="./assets/terminal-intro.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 
 ### stuff
 
