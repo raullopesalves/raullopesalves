@@ -18,11 +18,11 @@
 ### I studied this
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v2.svg">
-  <img src="./assets/education-v2.svg" alt="BSc and MSc in Informatics Engineering at FCUL, University of Lisbon" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/education-v3.svg">
+  <img src="./assets/education-v3.svg" alt="MSc and BSc in Computer Science at FCUL, University of Lisbon" width="100%">
 </picture>
 
-I published [this](https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276) which helped in [this](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full).
+> Where I published [**this**](https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276 "Master thesis"), which helped in [**this**](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full "Frontiers in Medicine research article").
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-e0562cacb4d7.svg">
