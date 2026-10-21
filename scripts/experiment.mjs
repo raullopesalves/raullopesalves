@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
-// Glyph outlines from standardgalactic/alphabet, released under CC0.
+// Pixel glyph shapes follow the Standard Galactic Alphabet bitmap layout.
 // Kept as paths so GitHub needs no font and exposes no plaintext SVG text.
 const day = process.env.EXPERIMENT_DATE || new Date().toISOString().slice(0, 10);
 if (!/^\d{4}-\d{2}-\d{2}$/.test(day)) throw new Error('Expected YYYY-MM-DD');
@@ -52,7 +52,7 @@ const paths = [...message].map(letter => {
   cursor += glyph.advance + tracking;
   return path;
 }).join('');
-const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="790" height="86" viewBox="0 0 790 86" role="img" aria-label="A daily message in Standard Galactic Alphabet."><style>.surface{fill:#fff;stroke:#d0d7de}.glyph{fill:#456c66}@media(prefers-color-scheme:dark){.surface{fill:#0d1117;stroke:#30363d}.glyph{fill:#8ac9b6}}</style><rect class="surface" x="1" y="1" width="788" height="84"/><g class="glyph" transform="translate(' + ((790 - width * scale) / 2) + ' ' + (43 + 285 * scale) + ') scale(' + scale + ' ' + (-scale) + ')">' + paths + '</g></svg>\n';
+const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="790" height="86" viewBox="0 0 790 86" role="img" aria-label="A daily message in Standard Galactic Alphabet."><style>.surface{fill:#fff;stroke:#d0d7de}.glyph{fill:#456c66}@media(prefers-color-scheme:dark){.surface{fill:#0d1117;stroke:#30363d}.glyph{fill:#8ac9b6}}</style><rect class="surface" x="1" y="1" width="788" height="84"/><g class="glyph" shape-rendering="crispEdges" transform="translate(' + ((790 - width * scale) / 2) + ' ' + (43 + 450 * scale) + ') scale(' + scale + ' ' + (-scale) + ')">' + paths + '</g></svg>\n';
 const version = createHash('sha256').update(svg).digest('hex').slice(0, 12);
 await mkdir('assets', { recursive: true });
 await writeFile('assets/experiment-' + version + '.svg', svg);
