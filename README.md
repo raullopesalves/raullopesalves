@@ -11,8 +11,8 @@
 ### I've worked in these
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/industries-v3.svg">
-  <img src="./assets/industries-v3.svg" alt="Industry experience: Banking, Healthcare, Telecom, Consulting, Public Admin, Consumer Apps" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/industries-v4.svg">
+  <img src="./assets/industries-v4.svg" alt="Industry experience: Banking, Healthcare, Telecom, Consulting, Public Admin, Consumer Apps" width="100%">
 </picture>
 
 ### I studied this
