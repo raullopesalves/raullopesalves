@@ -1,18 +1,18 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro-linux-v2.svg">
-  <img src="./assets/terminal-intro-linux-v2.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-intro-linux-v2-square.svg">
+  <img src="./assets/terminal-intro-linux-v2-square.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-1d4cf515357c.svg">
-  <img src="./assets/languages-1d4cf515357c.svg" alt="Languages used across public and private repositories" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-1d4cf515357c-square.svg">
+  <img src="./assets/languages-1d4cf515357c-square.svg" alt="Languages used across public and private repositories" width="100%">
 </picture>
 
 ### I've worked in these
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/industries-v4.svg">
-  <img src="./assets/industries-v4.svg" alt="Industry experience: Banking, Healthcare, Telecom, Consulting, Public Admin, Consumer Apps" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/industries-v4-square.svg">
+  <img src="./assets/industries-v4-square.svg" alt="Industry experience: Banking, Healthcare, Telecom, Consulting, Public Admin, Consumer Apps" width="100%">
 </picture>
 
 ### I studied here

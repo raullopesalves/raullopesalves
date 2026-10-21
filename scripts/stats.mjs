@@ -35,7 +35,7 @@ const escape = text => String(text).replace(/[&<>"']/g, character => ({ '&': '&a
 const languageColors = { TypeScript: '#3178c6', JavaScript: '#f7df1e', Python: '#56b6c2', Rust: '#dea584', 'C#': '#b175c2', CSS: '#a78bfa', HTML: '#e34f26', Java: '#4db6ac', Papyrus: '#e6a0c4', PowerShell: '#78a9e6', NSIS: '#adc56c', Other: '#89929b' };
 const colors = shown.map(([language], i) => languageColors[language] || `hsl(${(i * 137.5) % 360}, 55%, 62%)`);
 function shell(width, height, body, label) {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(label)}"><style>.bg{fill:#f6f8fa}.box{fill:#fff;stroke:#d0d7de}.text{fill:#1f2328}.muted{fill:#59636e}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}.box{fill:#0d1117;stroke:#30363d}.text{fill:#e6edf3}.muted{fill:#9198a1}}text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}</style><rect class="bg" width="100%" height="100%" rx="8"/>${body}</svg>\n`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(label)}"><style>.bg{fill:#ffffff}.box{fill:#fff;stroke:#d0d7de}.text{fill:#1f2328}.muted{fill:#59636e}@media(prefers-color-scheme:dark){.bg{fill:#0d1117}.box{fill:#0d1117;stroke:#30363d}.text{fill:#e6edf3}.muted{fill:#9198a1}}text{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}</style><rect class="bg" width="100%" height="100%"/>${body}</svg>\n`;
 }
 const metrics = [
   [profile.public_repos, 'public repositories'],
@@ -45,7 +45,7 @@ const metrics = [
 ];
 const stats = metrics.map(([value, label], i) => {
   const x = 1 + i * 200;
-  return `<rect class="box" x="${x}" y="1" width="188" height="106" rx="7"/><text class="text" x="${x + 18}" y="49" font-size="29" font-weight="600">${value}</text><text class="muted" x="${x + 18}" y="79" font-size="12">${label}</text>`;
+  return `<rect class="box" x="${x}" y="1" width="188" height="106"/><text class="text" x="${x + 18}" y="49" font-size="29" font-weight="600">${value}</text><text class="muted" x="${x + 18}" y="79" font-size="12">${label}</text>`;
 }).join('');
 const iconNames = { TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Rust: 'rust', 'C#': 'csharp', HTML: 'html5', CSS: 'css3', Java: 'java', PowerShell: 'powershell' };
 const badges = [];
@@ -84,7 +84,7 @@ const legend = shown.map(([language, bytes], i) => {
   return `<circle cx="599" cy="${y - 4}" r="4" fill="${colors[i]}"/><text class="text" x="613" y="${y}" font-size="12">${escape(language)}</text><text class="muted" x="767" y="${y}" text-anchor="end" font-size="12">${percentage(bytes)}%</text>`;
 }).join('');
 const scopeLabel = includePrivate ? 'public + private repos' : 'public repos';
-const languageSvg = `<rect class="box" x="1" y="1" width="449" height="${height - 2}" rx="8"/><rect class="box" x="468" y="1" width="320" height="${height - 2}" rx="8"/><text class="muted" x="20" y="29" font-size="11" font-weight="600" letter-spacing="0.7">LANGUAGES</text>${badges.join('')}${arcs}<text class="muted" x="528" y="${centerY + 5}" text-anchor="middle" font-size="12">${ranked.length} langs</text>${legend}`;
+const languageSvg = `<rect class="box" x="1" y="1" width="449" height="${height - 2}"/><rect class="box" x="468" y="1" width="320" height="${height - 2}"/><text class="muted" x="20" y="29" font-size="11" font-weight="600" letter-spacing="0.7">LANGUAGES</text>${badges.join('')}${arcs}<text class="muted" x="528" y="${centerY + 5}" text-anchor="middle" font-size="12">${ranked.length} langs</text>${legend}`;
 await mkdir('assets', { recursive: true });
 await writeFile('assets/stats.svg', shell(790, 109, stats, metrics.map(row => row.join(' ')).join(', ')));
 const graphic = shell(790, height, languageSvg, shown.map(([language, bytes]) => `${language}: ${percentage(bytes)}%`).join(', ') + `. ${scopeLabel}, excluding forks; code bytes, not proficiency.`);
