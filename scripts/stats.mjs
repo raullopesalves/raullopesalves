@@ -49,9 +49,12 @@ const stats = metrics.map(([value, label], i) => {
 }).join('');
 const iconNames = { TypeScript: 'typescript', JavaScript: 'javascript', Python: 'python', Rust: 'rust', 'C#': 'csharp', HTML: 'html5', CSS: 'css3', Java: 'java', PowerShell: 'powershell' };
 const badges = [];
+const nicheLanguages = new Set(['Papyrus', 'NSIS']);
+const badgeLanguages = ranked.filter(([language]) => !nicheLanguages.has(language));
+if (ranked.some(([language]) => nicheLanguages.has(language))) badgeLanguages.push(['Other', 0]);
 let badgeX = 20;
 let badgeY = 49;
-for (const [i, [language]] of ranked.entries()) {
+for (const [i, [language]] of badgeLanguages.entries()) {
   const badgeColor = languageColors[language] || `hsl(${(i * 137.5) % 360}, 55%, 62%)`;
   const width = Math.max(72, language.length * 7 + 49);
   if (badgeX + width > 314) { badgeX = 20; badgeY += 40; }
