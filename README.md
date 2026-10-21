@@ -1,10 +1,6 @@
 <img src="./assets/terminal-intro.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 
-### languages
-
 ![Languages used in public + private repositories](./assets/languages-526eeb1d2b9c.svg)
-
-### contributions
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-e0562cacb4d7.svg">
