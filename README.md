@@ -17,10 +17,12 @@
 
 ### I studied this
 
-**BSc in Informatics Engineering** · FCUL, University of Lisbon · 2017–2020  
-**MSc in Informatics Engineering** · FCUL, University of Lisbon · 2020–2023
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/education.svg">
+  <img src="./assets/education.svg" alt="BSc and MSc in Informatics Engineering at FCUL, University of Lisbon" width="100%">
+</picture>
 
-[Master’s thesis](https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276) · a web-based therapy app for caregivers of people with dementia.
+I published [this](https://repositorio.ulisboa.pt/entities/publication/b7ac3551-13c5-4bac-a8d0-bfb867b42276) which helped in [this](https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1625897/full).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-e0562cacb4d7.svg">
