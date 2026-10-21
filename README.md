@@ -13,15 +13,7 @@ some of it ends up here
 
 ### languages
 
-<p>
-  <img src="./assets/icons/typescript.svg" alt="TypeScript" width="28" height="28">&nbsp;
-  <img src="./assets/icons/javascript.svg" alt="JavaScript" width="28" height="28">&nbsp;
-  <img src="./assets/icons/html5.svg" alt="HTML" width="28" height="28">&nbsp;
-  <img src="./assets/icons/css3.svg" alt="CSS" width="28" height="28">&nbsp;
-  <img src="./assets/icons/java.svg" alt="Java" width="28" height="28">
-</p>
-
-![Languages used in public repositories](./assets/languages.svg)
+![Languages used in public repositories](./assets/languages-85534d113066.svg)
 
 ### contributions
 

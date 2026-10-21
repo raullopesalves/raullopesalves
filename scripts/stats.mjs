@@ -1,4 +1,5 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const user = 'raullopesalves';
 const headers = { Accept: 'application/vnd.github+json', 'User-Agent': 'profile-stats' };
@@ -40,21 +41,36 @@ const stats = metrics.map(([value, label], i) => {
   const x = 1 + i * 200;
   return `<rect class="box" x="${x}" y="1" width="188" height="106" rx="7"/><text class="text" x="${x + 18}" y="49" font-size="29" font-weight="600">${value}</text><text class="muted" x="${x + 18}" y="79" font-size="12">${label}</text>`;
 }).join('');
+const iconNames = { TypeScript: 'typescript', JavaScript: 'javascript', HTML: 'html5', CSS: 'css3', Java: 'java' };
+const cards = [];
+for (const [i, [language, bytes]] of shown.entries()) {
+  const x = 2 + i % 2 * 232;
+  const y = 2 + Math.floor(i / 2) * 78;
+  let icon = '';
+  if (iconNames[language]) {
+    const source = await readFile(`assets/icons/${iconNames[language]}.svg`, 'utf8');
+    const viewBox = source.match(/viewBox="([^"]+)"/)?.[1] || '0 0 128 128';
+    const inner = source.replace(/^[\s\S]*?<svg[^>]*>/, '').replace(/<\/svg>\s*$/, '');
+    icon = `<svg x="${x + 18}" y="${y + 19}" width="30" height="30" viewBox="${viewBox}">${inner}</svg>`;
+  }
+  cards.push(`<rect class="box" x="${x}" y="${y}" width="218" height="66" rx="9"/>${icon}<text class="text" x="${x + 62}" y="${y + 28}" font-size="14" font-weight="600">${escape(language)}</text><circle cx="${x + 66}" cy="${y + 46}" r="3" fill="${colors[i]}"/><text class="muted" x="${x + 77}" y="${y + 50}" font-size="12">${(bytes / sum * 100).toFixed(1)}%</text>`);
+}
+const radius = 79;
+const circumference = 2 * Math.PI * radius;
 let offset = 0;
-const bar = shown.map(([language, bytes], i) => {
-  const width = sum ? bytes / sum * 746 : 0;
-  const rect = `<rect x="${26 + offset}" y="60" width="${width}" height="12" fill="${colors[i]}"/>`;
-  offset += width;
-  return rect;
+const arcs = shown.map(([, bytes], i) => {
+  const length = sum ? bytes / sum * circumference : 0;
+  const arc = `<circle cx="624" cy="112" r="${radius}" fill="none" stroke="${colors[i]}" stroke-width="21" stroke-dasharray="${length} ${circumference - length}" stroke-dashoffset="${-offset}" transform="rotate(-90 624 112)"/>`;
+  offset += length;
+  return arc;
 }).join('');
-const legend = shown.map(([language, bytes], i) => {
-  const x = 26 + (i % 3) * 250;
-  const y = 105 + Math.floor(i / 3) * 28;
-  return `<circle cx="${x + 4}" cy="${y - 4}" r="4" fill="${colors[i]}"/><text class="text" x="${x + 17}" y="${y}" font-size="12">${escape(language)} <tspan class="muted">${(bytes / sum * 100).toFixed(1)}%</tspan></text>`;
-}).join('');
-const height = 147 + Math.max(0, Math.ceil(shown.length / 3) - 1) * 28;
-const languageSvg = `<rect class="box" x="1" y="1" width="786" height="${height - 2}" rx="7"/><text class="text" x="26" y="34" font-size="15" font-weight="600">languages</text>${bar}${legend}<text class="muted" x="26" y="${height - 17}" font-size="11">public, non-fork repositories · share of code bytes</text>`;
+const height = Math.max(248, Math.ceil(shown.length / 2) * 78 + 14);
+const languageSvg = `${cards.join('')}${arcs}<text class="text" x="624" y="109" text-anchor="middle" font-size="26" font-weight="600">${ranked.length}</text><text class="muted" x="624" y="132" text-anchor="middle" font-size="12">languages</text><text class="muted" x="624" y="228" text-anchor="middle" font-size="11">share of public code bytes</text>`;
 await mkdir('assets', { recursive: true });
 await writeFile('assets/stats.svg', shell(790, 109, stats, metrics.map(row => row.join(' ')).join(', ')));
-await writeFile('assets/languages.svg', shell(790, height, languageSvg, 'Language distribution across public non-fork repositories'));
+const graphic = shell(790, height, languageSvg, shown.map(([language, bytes]) => `${language}: ${(bytes / sum * 100).toFixed(1)}%`).join(', ') + '. Public, non-fork repositories; code bytes, not proficiency.');
+const version = createHash('sha256').update(graphic).digest('hex').slice(0, 12);
+await writeFile(`assets/languages-${version}.svg`, graphic);
+const readme = await readFile('README.md', 'utf8');
+await writeFile('README.md', readme.replace(/\.\/assets\/languages(?:-[a-f0-9]+)?\.svg/g, `./assets/languages-${version}.svg`));
 console.log(`Generated cards from ${repos.length} public repositories and ${ranked.length} languages.`);
