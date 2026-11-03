@@ -4,8 +4,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-0623d6b864b5.svg">
-  <img src="./assets/languages-0623d6b864b5.svg" alt="Languages used across public and private repositories" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-2099f18a5edc.svg">
+  <img src="./assets/languages-2099f18a5edc.svg" alt="Languages used across public and private repositories" width="100%">
 </picture>
 
 ### I've worked in these
@@ -28,13 +28,13 @@
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-91ccf09228ad.svg">
-  <img src="./assets/contributions-light-91a47eca8827.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-2e14842094f4.svg">
+  <img src="./assets/contributions-light-dffd4e10115b.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
 
 <!-- pixel-experiment -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-379eb693b75f.svg">
-  <img src="./assets/experiment-379eb693b75f.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-8da6cc111375.svg">
+  <img src="./assets/experiment-8da6cc111375.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
 </picture>
 <!-- /pixel-experiment -->
