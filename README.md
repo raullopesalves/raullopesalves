@@ -3,6 +3,17 @@
   <img src="./assets/terminal-intro-linux-v2-square.svg" alt="i make stuff. some of it ends up here. ASCII person at a computer in a terminal window." width="100%">
 </picture>
 
+### stuff i've made
+
+**[Bytescape](https://github.com/raullopesalves/bytescape)**  
+where did my disk space go. a windows app and cli to find out. rust + tauri.  
+[download](https://github.com/raullopesalves/bytescape/releases/latest) · [demo](https://github.com/raullopesalves/bytescape#see-the-workflow) · [how it works](https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md)
+
+**[Photo Vault](https://github.com/raullopesalves/photovault)**  
+a photo archive that lives on your computer. your files stay yours.  
+[download](https://github.com/raullopesalves/photovault/releases/latest) · [screenshots](https://github.com/raullopesalves/photovault#a-short-tour) · [how it works](https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions)
+
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-39b12861a92d.svg">
   <img src="./assets/languages-39b12861a92d.svg" alt="Languages used across public and private repositories" width="100%">
