@@ -39,13 +39,13 @@ a photo archive that lives on your computer. your files stay yours.
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-f50b1781c267.svg">
-  <img src="./assets/contributions-light-d0a97afb0f3a.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-3035ed57af25.svg">
+  <img src="./assets/contributions-light-c4e5021e3d43.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
 
 <!-- pixel-experiment -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-9f1855136b13.svg">
-  <img src="./assets/experiment-9f1855136b13.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-5311b06552ac.svg">
+  <img src="./assets/experiment-5311b06552ac.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
 </picture>
 <!-- /pixel-experiment -->
