@@ -15,8 +15,8 @@ a photo archive that lives on your computer. your files stay yours.
 
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-c79b7d2f4b28.svg">
-  <img src="./assets/languages-c79b7d2f4b28.svg" alt="Languages used across public and private repositories" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-d6534605941f.svg">
+  <img src="./assets/languages-d6534605941f.svg" alt="Languages used across public and private repositories" width="100%">
 </picture>
 
 ### I've worked in these
@@ -39,13 +39,13 @@ a photo archive that lives on your computer. your files stay yours.
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-3035ed57af25.svg">
-  <img src="./assets/contributions-light-c4e5021e3d43.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-2fe744a32edd.svg">
+  <img src="./assets/contributions-light-4b418fd00753.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
 
 <!-- pixel-experiment -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-5311b06552ac.svg">
-  <img src="./assets/experiment-5311b06552ac.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-974b13c4a3fc.svg">
+  <img src="./assets/experiment-974b13c4a3fc.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
 </picture>
 <!-- /pixel-experiment -->
