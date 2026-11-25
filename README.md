@@ -9,11 +9,11 @@
 <tr>
 <td width="50%" valign="top">
   <a href="https://github.com/raullopesalves/bytescape#see-the-workflow"><img src="./assets/gallery-bytescape.webp" width="400" alt="Bytescape disk scan with a color-coded treemap showing what takes up space"></a><br>
-  <strong><a href="https://github.com/raullopesalves/bytescape">Bytescape</a></strong> · <a href="https://github.com/raullopesalves/bytescape#see-the-workflow">Demo</a> · <a href="https://github.com/raullopesalves/bytescape/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md">Write-up</a>
+  <strong><a href="https://github.com/raullopesalves/bytescape">Bytescape</a></strong> · <a href="https://github.com/raullopesalves/bytescape#see-the-workflow">Demo</a> · <a href="https://github.com/raullopesalves/bytescape/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md">readme</a>
 </td>
 <td width="50%" valign="top">
   <a href="https://github.com/raullopesalves/photovault#a-short-tour"><img src="./assets/gallery-photovault.webp" width="400" alt="Photo Vault timeline showing a grid of demo photos organized by date"></a><br>
-  <strong><a href="https://github.com/raullopesalves/photovault">Photo Vault</a></strong> · <a href="https://github.com/raullopesalves/photovault#a-short-tour">Screenshots</a> · <a href="https://github.com/raullopesalves/photovault/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions">Write-up</a>
+  <strong><a href="https://github.com/raullopesalves/photovault">Photo Vault</a></strong> · <a href="https://github.com/raullopesalves/photovault#a-short-tour">Screenshots</a> · <a href="https://github.com/raullopesalves/photovault/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions">readme</a>
 </td>
 </tr>
 <tr>
@@ -23,7 +23,7 @@
 </td>
 <td width="50%" valign="top">
   <a href="https://raullopesalves.github.io/geodata-dashboard-ui/"><img src="./assets/gallery-geodata.webp" width="400" alt="Map of Switzerland with clustered reports, timeline, filters and summary charts"></a><br>
-  <strong><a href="https://github.com/raullopesalves/geodata-dashboard-ui">Geodata Dashboard</a></strong> · <a href="https://raullopesalves.github.io/geodata-dashboard-ui/">Live demo</a> · <a href="https://github.com/raullopesalves/geodata-dashboard-ui#how-it-works">Write-up</a>
+  <strong><a href="https://github.com/raullopesalves/geodata-dashboard-ui">Geodata Dashboard</a></strong> · <a href="https://raullopesalves.github.io/geodata-dashboard-ui/">Live demo</a> · <a href="https://github.com/raullopesalves/geodata-dashboard-ui#how-it-works">readme</a>
 </td>
 </tr>
 </table>
