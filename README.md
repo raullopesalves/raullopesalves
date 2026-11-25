@@ -8,18 +8,6 @@
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-  <a href="https://github.com/raullopesalves/claude-codex-chat-public#the-3d-council-room"><img src="./assets/gallery-council.webp" width="400" alt="Claude, Codex and Gemini gathered around a table in the 3D Council room"></a>
-  <p><strong><a href="https://github.com/raullopesalves/claude-codex-chat-public">Claude–Codex Chat</a></strong><br>Put Claude Code and Codex in a 3D room and let them debate.</p>
-  <p><strong><a href="https://github.com/raullopesalves/claude-codex-chat-public#the-3d-council-room">Watch the Council</a> ↗</strong> · <a href="https://github.com/raullopesalves/claude-codex-chat-public/releases/tag/v1.1.0">Download</a></p>
-</td>
-<td width="50%" valign="top">
-  <a href="https://raullopesalves.github.io/geodata-dashboard-ui/"><img src="./assets/gallery-geodata.webp" width="400" alt="Map of Switzerland with clustered reports, timeline, filters and summary charts"></a>
-  <p><strong><a href="https://github.com/raullopesalves/geodata-dashboard-ui">Geodata Dashboard</a></strong><br>Explore simulated bird flu reports on an interactive map of Switzerland.</p>
-  <p><strong><a href="https://raullopesalves.github.io/geodata-dashboard-ui/">Open live demo</a> ↗</strong> · <a href="https://github.com/raullopesalves/geodata-dashboard-ui#how-it-works">How it works</a></p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
   <a href="https://github.com/raullopesalves/bytescape#see-the-workflow"><img src="./assets/gallery-bytescape.webp" width="400" alt="Bytescape disk scan with a color-coded treemap showing what takes up space"></a>
   <p><strong><a href="https://github.com/raullopesalves/bytescape">Bytescape</a></strong><br>Find what’s eating your disk space with a Windows app and CLI.</p>
   <p><strong><a href="https://github.com/raullopesalves/bytescape#see-the-workflow">Watch demo</a> ↗</strong> · <a href="https://github.com/raullopesalves/bytescape/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md">How it works</a></p>
@@ -28,6 +16,18 @@
   <a href="https://github.com/raullopesalves/photovault#a-short-tour"><img src="./assets/gallery-photovault.webp" width="400" alt="Photo Vault timeline showing a grid of demo photos organized by date"></a>
   <p><strong><a href="https://github.com/raullopesalves/photovault">Photo Vault</a></strong><br>A photo archive that lives on your computer. Your files stay yours.</p>
   <p><strong><a href="https://github.com/raullopesalves/photovault#a-short-tour">See screenshots</a> ↗</strong> · <a href="https://github.com/raullopesalves/photovault/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions">How it works</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/raullopesalves/claude-codex-chat-public#the-3d-council-room"><img src="./assets/gallery-council.webp" width="400" alt="Claude, Codex and Gemini gathered around a table in the 3D Council room"></a>
+  <p><strong><a href="https://github.com/raullopesalves/claude-codex-chat-public">Claude–Codex Chat</a></strong><br>Put Claude Code and Codex in a 3D room and let them debate.</p>
+  <p><strong><a href="https://github.com/raullopesalves/claude-codex-chat-public#the-3d-council-room">Watch the Council</a> ↗</strong> · <a href="https://github.com/raullopesalves/claude-codex-chat-public/releases/tag/v1.1.0">Download</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://raullopesalves.github.io/geodata-dashboard-ui/"><img src="./assets/gallery-geodata.webp" width="400" alt="Map of Switzerland with clustered reports, timeline, filters and summary charts"></a>
+  <p><strong><a href="https://github.com/raullopesalves/geodata-dashboard-ui">Geodata Dashboard</a></strong><br>Explore simulated bird flu reports on an interactive map of Switzerland.</p>
+  <p><strong><a href="https://raullopesalves.github.io/geodata-dashboard-ui/">Open live demo</a> ↗</strong> · <a href="https://github.com/raullopesalves/geodata-dashboard-ui#how-it-works">How it works</a></p>
 </td>
 </tr>
 </table>
