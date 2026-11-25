@@ -5,14 +5,20 @@
 
 ### stuff i've made
 
-**[Bytescape](https://github.com/raullopesalves/bytescape)**  
-where did my disk space go. a windows app and cli to find out. rust + tauri.  
-[download](https://github.com/raullopesalves/bytescape/releases/latest) · [demo](https://github.com/raullopesalves/bytescape#see-the-workflow) · [how it works](https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md)
-
-**[Photo Vault](https://github.com/raullopesalves/photovault)**  
-a photo archive that lives on your computer. your files stay yours.  
-[download](https://github.com/raullopesalves/photovault/releases/latest) · [screenshots](https://github.com/raullopesalves/photovault#a-short-tour) · [how it works](https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions)
-
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+  <a href="https://github.com/raullopesalves/bytescape#see-the-workflow"><img src="./assets/bytescape-preview.webp" width="384" alt="Bytescape disk scan with a color-coded treemap showing what takes up space"></a>
+  <p><strong><a href="https://github.com/raullopesalves/bytescape">Bytescape</a></strong><br>Find what’s eating your disk space with a Windows app and CLI.</p>
+  <p><strong><a href="https://github.com/raullopesalves/bytescape#see-the-workflow">Watch demo</a></strong> · <a href="https://github.com/raullopesalves/bytescape/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/bytescape/blob/main/docs/CASE_STUDY.md">How it works</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://github.com/raullopesalves/photovault#a-short-tour"><img src="./assets/photovault-preview.webp" width="384" alt="Photo Vault timeline showing a grid of demo photos organized by date"></a>
+  <p><strong><a href="https://github.com/raullopesalves/photovault">Photo Vault</a></strong><br>A photo archive that lives on your computer. Your files stay yours.</p>
+  <p><strong><a href="https://github.com/raullopesalves/photovault#a-short-tour">See screenshots</a></strong> · <a href="https://github.com/raullopesalves/photovault/releases/latest">Download</a> · <a href="https://github.com/raullopesalves/photovault#my-contribution-and-technical-decisions">How it works</a></p>
+</td>
+</tr>
+</table>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/languages-38a58577240e.svg">
