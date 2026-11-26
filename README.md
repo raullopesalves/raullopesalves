@@ -53,13 +53,13 @@
 </table>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-099866f23c49.svg">
-  <img src="./assets/contributions-light-f171e7b102bd.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark-d62a97477fa0.svg">
+  <img src="./assets/contributions-light-fa486789ac52.svg" alt="3D calendar of public GitHub contributions over the past year" width="100%">
 </picture>
 
 <!-- pixel-experiment -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-4faea1481ab5.svg">
-  <img src="./assets/experiment-4faea1481ab5.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/experiment-9b090663a316.svg">
+  <img src="./assets/experiment-9b090663a316.svg" alt="A daily message in Standard Galactic Alphabet." width="100%">
 </picture>
 <!-- /pixel-experiment -->
